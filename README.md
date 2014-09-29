@@ -14,7 +14,7 @@ All the rest of exercises are not done yet.
 ### Chapter 2
 
 * ~~Example 2.1~~
-* Example 2.2 
+* ~~Example 2.2~~
 
 ## How to run the examples
 
