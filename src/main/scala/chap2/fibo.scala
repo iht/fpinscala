@@ -21,9 +21,13 @@
  * SOFTWARE.
  */  
 
+// --------------------
+// Code for example 2.1
+// --------------------
+
 package chap2
 
-object FibonacciApp extends App {
+object Fibonacci extends App {
   val x = args(0).toInt
 
   println("The Fibonacci number at %d is %d".format(x, fibo(x)))

@@ -21,10 +21,14 @@
  * SOFTWARE.
  */  
 
+// --------------------
+// Test for example 2.2
+// --------------------
+
 package chap2
 
 import org.specs2.mutable._
-import chap2.SortedApp.isSorted
+import chap2.Sorted.isSorted
 
 object isSortedSpec extends Specification {
   "isSorted" should {

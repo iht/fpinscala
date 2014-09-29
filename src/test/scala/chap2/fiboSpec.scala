@@ -21,10 +21,14 @@
  * SOFTWARE.
  */  
 
+// --------------------
+// Test for example 2.1
+// --------------------
+
 package chap2
 
 import org.specs2.mutable._
-import chap2.FibonacciApp.fibo
+import chap2.Fibonacci.fibo
 
 object FibonacciSpec extends Specification {
   "FibonacciApp" should {

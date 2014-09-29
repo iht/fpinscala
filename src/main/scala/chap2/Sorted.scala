@@ -21,9 +21,13 @@
  * SOFTWARE.
  */  
 
+// --------------------
+// Code for example 2.2
+// --------------------
+
 package chap2
 
-object SortedApp extends App {
+object Sorted extends App {
   // Check if input is sorted from greater to minor
   // Input args must be integers space separated
   // e.g. runMain chap2.SortedApp 5 6 1 2 4 5 1
