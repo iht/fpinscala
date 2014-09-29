@@ -25,7 +25,7 @@ package chap2
 
 object SortedApp extends App {
   // Check if input is sorted from greater to minor
-  // Input args must be space separated
+  // Input args must be integers space separated
   // e.g. runMain chap2.SortedApp 5 6 1 2 4 5 1
   val input = args.map(_.toInt)
 
