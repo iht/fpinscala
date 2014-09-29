@@ -15,6 +15,9 @@ All the rest of exercises are not done yet.
 
 * ~~Example 2.1~~
 * ~~Example 2.2~~
+* Example 2.3
+* Example 2.4
+* Example 2.5
 
 ## How to run the examples
 
