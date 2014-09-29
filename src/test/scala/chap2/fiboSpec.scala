@@ -42,13 +42,3 @@ object FibonacciSpec extends Specification {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
