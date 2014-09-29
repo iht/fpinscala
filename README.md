@@ -31,7 +31,7 @@ To compile the examples, simply run
 
 If it's the first time, it will download all the necessary dependencies.
 
-To run the exapmles in sbt, use
+To run the examples in sbt, use
 ```
 >  runMain package_name.class_name args
 ```
