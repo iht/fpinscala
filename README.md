@@ -5,8 +5,6 @@ This repository hosts my solutions to the exercises of the book
 
 The list of exercises and the official solutions can be found at https://github.com/fpinscala/fpinscala
 
-Solution to the exercises of Functional Programming in Scala, from Mannig Publications
-
 ## Status
 
 Crossed examples are finished and included in the repository.
