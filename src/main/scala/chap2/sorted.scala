@@ -39,7 +39,7 @@ object Sorted extends App {
   // Use to check order from minor to greater
   // val sortFunc = (a: Int, b: Int) => a<=b
 
-  val output = isSorted(input, (a:Int, b:Int) => a >= b) match {
+  val output = isSorted(input, sortFunc) match {
     case true =>
       "is sorted from greater to minor"
     case false =>
