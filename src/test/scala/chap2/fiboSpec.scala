@@ -31,7 +31,7 @@ import org.specs2.mutable._
 import chap2.Fibonacci.fibo
 
 object FibonacciSpec extends Specification {
-  "FibonacciApp" should {
+  "Fibonacci" should {
     "calculate the nth position of the Fibonacci sequence" in {
       fibo(0) mustEqual 1
       fibo(1) mustEqual 1
