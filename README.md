@@ -50,3 +50,10 @@ To run the tests, simply execute the following in sbt
 ```
 > test
 ```
+
+## License
+
+All the code hosted in this repository is distributed under the MIT
+license. See [the
+license](https://github.com/iht/fpinscala/blob/master/LICENSE) for
+more details.
