@@ -3,7 +3,7 @@
 This repository hosts my solutions to the exercises of the book
 [Functional Programming in Scala, from Manning Publications](http://www.manning.com/bjarnason/).
 
-The list of exercises and the official solutions can be found at https://github.com/iht/fpinscala
+The list of exercises and the official solutions can be found at https://github.com/fpinscala/fpinscala
 
 Solution to the exercises of Functional Programming in Scala, from Mannig Publications
 
