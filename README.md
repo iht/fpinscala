@@ -1,4 +1,4 @@
-# Functional programming in Scala
+# Functional Programming in Scala
 
 This repository hosts my solutions to the exercises of the book
 [Functional Programming in Scala, from Manning Publications](http://www.manning.com/bjarnason/).
