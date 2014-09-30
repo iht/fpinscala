@@ -37,7 +37,7 @@ If it's the first time, it will download all the necessary dependencies.
 
 To run the examples in sbt, use
 ```
->  runMain package_name.class_name args
+>  runMain package_name.object_name args
 ```
 
 For instance
