@@ -9,7 +9,6 @@
 | ~~Ex. 2.4~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04Spec.scala)|
 | ~~Ex. 2.5~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex05Spec.scala)|
 |*Ch. 3*            |      |      |
-|Ex. 3.1 |   |   |
 |Ex. 3.2 |   |   |
 |Ex. 3.3 |   |   |
 |Ex. 3.4 |   |   |
