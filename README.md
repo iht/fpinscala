@@ -38,7 +38,7 @@ To run the examples in sbt, use
 
 For instance
 ```
-> runMain chap2.FibonacciApp 5
+> runMain chap2.Fibonacci 5
 ```
 
 ## Tests
