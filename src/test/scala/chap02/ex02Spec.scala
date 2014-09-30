@@ -22,39 +22,27 @@
  */  
 
 // --------------------
-// Code for example 2.2
+// Test for example 2.2
 // --------------------
 
-package chap2
+package chap02
 
-object Sorted extends App {
-  // Check if input is sorted from greater to minor
-  // Input args must be integers space separated
-  // e.g. runMain chap2.SortedApp 5 6 1 2 4 5 1
-  val input = args.map(_.toInt)
+import org.specs2.mutable._
+import chap02.Ex02.isSorted
 
-  // Use to check order from greater to minor
-  val sortFunc = (a: Int, b: Int) => a>=b
-
-  // Use to check order from minor to greater
-  // val sortFunc = (a: Int, b: Int) => a<=b
-
-  val output = isSorted(input, sortFunc) match {
-    case true =>
-      "is sorted from greater to minor"
-    case false =>
-      "is not sorted from greater to minor"
-  }
-  
-  println("The list %s %s".format(input.mkString(","), output))
-
-  def isSorted[A](as: Array[A], ordered: (A,A) => Boolean): Boolean = {
-    @annotation.tailrec
-    def loop(n: Int, s: Boolean): Boolean = {
-      if (n >= as.length - 1) s
-      else loop(n + 1, s && ordered(as(n), as(n+1)))
+object Ex02Spec extends Specification {
+  "isSorted" should {
+    "check if some lists are sorted" in {
+      isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual true
+      isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a>=b) mustEqual false
+      isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual true
+      isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a<=b) mustEqual false
+      isSorted((Array(1,2,3,40,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
+      isSorted(Array(1,2,3,40,5,6), (a: Int, b: Int) => a<=b) mustEqual false
+      isSorted(Array(100,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual false
+      isSorted(Array(1,2,3,4,5,0), (a: Int, b: Int) => a<=b) mustEqual false
+      isSorted((Array(100,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
+      isSorted((Array(1,2,3,4,5,0)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
     }
-
-    loop(0, true)
   }
 }

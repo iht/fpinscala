@@ -22,23 +22,23 @@
  */  
 
 // --------------------
-// Code for example 2.1
+// Test for example 2.1
 // --------------------
 
-package chap2
+package chap02
 
-object Fibonacci extends App {
-  val x = args(0).toInt
+import org.specs2.mutable._
+import chap02.Ex01.fibo
 
-  println("The Fibonacci number at %d is %d".format(x, fibo(x)))
-
-  def fibo(n: Int): Int = {
-    @annotation.tailrec
-    def go(a: Int, b: Int, f: Int): Int = {
-      if (f == 0) b
-      else if(f == 1) b
-      else go(b, a+b, f-1)
+object Ex01Spec extends Specification {
+  "Fibonacci" should {
+    "calculate the nth position of the Fibonacci sequence" in {
+      fibo(0) mustEqual 1
+      fibo(1) mustEqual 1
+      fibo(2) mustEqual 2
+      fibo(3) mustEqual 3
+      fibo(4) mustEqual 5
+      fibo(5) mustEqual 8
     }
-    go(0, 1, n+1)
   }
 }

@@ -22,27 +22,23 @@
  */  
 
 // --------------------
-// Test for example 2.2
+// Code for example 2.1
 // --------------------
 
-package chap2
+package chap02
 
-import org.specs2.mutable._
-import chap2.Sorted.isSorted
+object Ex01 extends App {
+  val x = args(0).toInt
 
-object isSortedSpec extends Specification {
-  "isSorted" should {
-    "check if some lists are sorted" in {
-      isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual true
-      isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a>=b) mustEqual false
-      isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual true
-      isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a<=b) mustEqual false
-      isSorted((Array(1,2,3,40,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
-      isSorted(Array(1,2,3,40,5,6), (a: Int, b: Int) => a<=b) mustEqual false
-      isSorted(Array(100,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual false
-      isSorted(Array(1,2,3,4,5,0), (a: Int, b: Int) => a<=b) mustEqual false
-      isSorted((Array(100,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
-      isSorted((Array(1,2,3,4,5,0)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
+  println("The Fibonacci number at %d is %d".format(x, fibo(x)))
+
+  def fibo(n: Int): Int = {
+    @annotation.tailrec
+    def go(a: Int, b: Int, f: Int): Int = {
+      if (f == 0) b
+      else if(f == 1) b
+      else go(b, a+b, f-1)
     }
+    go(0, 1, n+1)
   }
 }

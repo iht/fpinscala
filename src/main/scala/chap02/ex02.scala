@@ -22,23 +22,39 @@
  */  
 
 // --------------------
-// Test for example 2.1
+// Code for example 2.2
 // --------------------
 
-package chap2
+package chap02
 
-import org.specs2.mutable._
-import chap2.Fibonacci.fibo
+object Ex02 extends App {
+  // Check if input is sorted from greater to minor
+  // Input args must be integers space separated
+  // e.g. runMain chap2.SortedApp 5 6 1 2 4 5 1
+  val input = args.map(_.toInt)
 
-object FibonacciSpec extends Specification {
-  "Fibonacci" should {
-    "calculate the nth position of the Fibonacci sequence" in {
-      fibo(0) mustEqual 1
-      fibo(1) mustEqual 1
-      fibo(2) mustEqual 2
-      fibo(3) mustEqual 3
-      fibo(4) mustEqual 5
-      fibo(5) mustEqual 8
+  // Use to check order from greater to minor
+  val sortFunc = (a: Int, b: Int) => a>=b
+
+  // Use to check order from minor to greater
+  // val sortFunc = (a: Int, b: Int) => a<=b
+
+  val output = isSorted(input, sortFunc) match {
+    case true =>
+      "is sorted from greater to minor"
+    case false =>
+      "is not sorted from greater to minor"
+  }
+  
+  println("The list %s %s".format(input.mkString(","), output))
+
+  def isSorted[A](as: Array[A], ordered: (A,A) => Boolean): Boolean = {
+    @annotation.tailrec
+    def loop(n: Int, s: Boolean): Boolean = {
+      if (n >= as.length - 1) s
+      else loop(n + 1, s && ordered(as(n), as(n+1)))
     }
+
+    loop(0, true)
   }
 }
