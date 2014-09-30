@@ -1,5 +1,7 @@
 # Completion Status of the Exercises
 
+[Back to repo home](https://github.com/iht/fpinscala)
+
 Crossed examples are finished and included in the repository.
 
 All the rest of exercises are not done yet.
@@ -28,9 +30,7 @@ All the rest of exercises are not done yet.
 |Ex. 3.14 |   |   |
 |Ex. 3.15 |   |   |
 
-
-
-
+[Back to repo home](https://github.com/iht/fpinscala)
 
 
 
