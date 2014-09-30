@@ -1,5 +1,9 @@
 # Completion Status of the Exercises
 
+Crossed examples are finished and included in the repository.
+
+All the rest of exercises are not done yet.
+
 | **Chapter/Exercise** | **Solution** | **Test** |
 | ---------------- | ---- | ---- | 
 | *Ch. 2*          |      |      | 

@@ -7,10 +7,6 @@ The list of exercises and the official solutions can be found at https://github.
 
 ## Status
 
-Crossed examples are finished and included in the repository.
-
-All the rest of exercises are not done yet.
-
 * [Completion status of the exercises](https://github.com/iht/fpinscala/blob/master/doc/status.md)
 
 You can find the examples at
