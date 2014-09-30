@@ -15,8 +15,8 @@ You can find the examples at
 [`src/main/scala`](https://github.com/iht/fpinscala/tree/master/src/main/scala/),
 with a directory (Scala package) for each book chapter.
 
-| **Chapter/Exercise** | **Solution** | **Test** |
-| ---------------- | ---- | ---- |
+| **Chapter/Exercise** | **Solution** | **Test** | **Chapter/Exercise** | **Solution** | **Test** |
+| ---------------- | ---- | ---- | ---------------- | ---- | ---- |
 | *Ch. 2*          |      |      | *Ch. 3*            |      |      |
 | ~~Ex. 2.1~~| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex01.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex01.scala)|Ex. 3.2 |   |   |
 | ~~Ex. 2.2~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex02.scala)|Ex. 3.3 |   |   |
