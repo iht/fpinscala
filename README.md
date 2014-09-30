@@ -15,7 +15,7 @@ All the rest of exercises are not done yet.
 
 * ~~Example 2.1~~
 * ~~Example 2.2~~
-* Example 2.3
+* ~~Example 2.3~~
 * Example 2.4
 * Example 2.5
 
@@ -38,8 +38,11 @@ To run the examples in sbt, use
 
 For instance
 ```
-> runMain chap2.Fibonacci 5
+> runMain chap2.Ex02 5
 ```
+
+Not all examples can be run as applications. To check the output for
+some input values of all the examples, you can add cases to the tests.
 
 ## Tests
 
