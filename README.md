@@ -23,13 +23,13 @@ with a directory (Scala package) for each book chapter.
 | ~~Ex. 2.3~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex03.scala)|Ex. 3.4 |   |   |
 | ~~Ex. 2.4~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04.scala)|Ex. 3.5 |   |   |
 | ~~Ex. 2.5~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04.scala)|Ex. 3.6 |   |   | 
-|            |                          | Ex. 3.9 |   |   |
-|            |                          | Ex. 3.10|   |   |
-|            |                          | Ex. 3.11|   |   |
-|            |                          | Ex. 3.12|   |   |
-|            |                          | Ex. 3.13|   |   |
-|            |                          | Ex. 3.14|   |   |
-|            |                          | Ex. 3.15|   |   |
+|            |            |                          | Ex. 3.9 |   |   |
+|            |            |                          | Ex. 3.10|   |   |
+|            |            |                          | Ex. 3.11|   |   |
+|            |            |                          | Ex. 3.12|   |   |
+|            |            |                          | Ex. 3.13|   |   |
+|            |            |                          | Ex. 3.14|   |   |
+|            |            |                          | Ex. 3.15|   |   |
 
 ## How to run the exercises
 
