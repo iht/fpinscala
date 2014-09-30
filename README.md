@@ -47,7 +47,7 @@ some input values of all the examples, you can add cases to the tests.
 ## Tests
 
 For each one of the examples, I try to provide a test. Tests are
-stored in the directory `src/test/scala`, and you can reuse them for
+stored in the directory [`src/test/scala`](https://github.com/iht/fpinscala/tree/master/src/test/scala/), and you can reuse them for
 your examples.
 
 To run the tests, simply execute the following in sbt
