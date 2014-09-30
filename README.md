@@ -17,17 +17,34 @@ with a directory (Scala package) for each book chapter.
 
 ### Chapter 2
 
-* ~~Example 2.1~~
-* ~~Example 2.2~~
-* ~~Example 2.3~~
-* ~~Example 2.4~~
-* Example 2.5
+* ~~Exercise 2.1~~
+* ~~Exercise 2.2~~
+* ~~Exercise 2.3~~
+* ~~Exercise 2.4~~
+* ~~Exercise 2.5~~
 
-## How to run the examples
+### Chapter 3
 
-You will need [sbt](http://www.scala-sbt.org/) to run the examples.
+* Exercise 3.2
+* Exercise 3.3
+* Exercise 3.4
+* Exercise 3.5
+* Exercise 3.6
+* Exercise 3.9
+* Exercise 3.10
+* Exercise 3.11
+* Exercise 3.12
+* Exercise 3.13
+* Exercise 3.14
+* Exercise 3.15
 
-To compile the examples, simply run
+
+
+## How to run the exercises
+
+You will need [sbt](http://www.scala-sbt.org/) to run the exercises.
+
+To compile the exercises, simply run
 
 ```
 > compile
@@ -35,7 +52,7 @@ To compile the examples, simply run
 
 If it's the first time, it will download all the necessary dependencies.
 
-To run the examples in sbt, use
+To run the exercises in sbt, use
 ```
 >  runMain package_name.object_name args
 ```
@@ -45,14 +62,14 @@ For instance
 > runMain chap2.Ex02 5
 ```
 
-Not all examples can be run as applications. To check the output for
-some input values of all the examples, you can add cases to the tests.
+Not all exercises can be run as applications. To check the output for
+some input values of all the exercises, you can add cases to the tests.
 
 ## Tests
 
-For each one of the examples, I try to provide a test. Tests are
+For each one of the exercises, I try to provide a test. Tests are
 stored in the directory [`src/test/scala`](https://github.com/iht/fpinscala/tree/master/src/test/scala/), and you can reuse them for
-your examples.
+your exercises.
 
 To run the tests, simply execute the following in sbt
 ```
