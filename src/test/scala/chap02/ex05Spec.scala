@@ -35,12 +35,23 @@ object Ex05Spec extends Specification {
     "return some composed functions" in {
       val f1 = (x:Int) => x.toString
       val g1 = (y:Double) => y.toInt
+      val c1 = g1 andThen f1
 
       val f2 = (x: Double) => (x*x).toString
       val g2 = (y: Int) => y*2.0
+      val c2 = g2 andThen f2
 
       f1(g1(7.0)) mustEqual "7"
       f2(g2(3)) mustEqual "36.0"
+
+      f1(g1(7.0)) mustEqual c1(7.0)
+      f1(g1(2.0)) mustEqual c1(2.0)
+      f1(g1(-3.0)) mustEqual c1(-3.0)
+
+      f2(g2(7)) mustEqual c2(7)
+      f2(g2(2)) mustEqual c2(2)
+      f2(g2(-3)) mustEqual c2(-3)
+
     }
   }
 }
