@@ -33,13 +33,22 @@ import scala.math
 
 object Ex04Spec extends Specification {
   "Uncurry" should {
-    "return some uncurried functions" in {
-      val f = (x: Double) => (y: Double) => math.pow(x,y)
-      val g = (a: Int) => (b: Int) => (a-b).toString
+    val f = (x: Double) => (y: Double) => math.pow(x,y)
+    val g = (a: Int) => (b: Int) => (a-b).toString
 
+    "apply power in one direction" in {
       uncurry(f)(3.0,2.0) mustEqual 9.0
+    }
+    
+    "apply power in opposite direction" in {
       uncurry(f)(2.0,3.0) mustEqual 8.0
+    }
+
+    "apply substraction and string in one direction" in {
       uncurry(g)(5,7) mustEqual "-2"
+    }
+
+    "apply substraction and string in opposite direction" in {
       uncurry(g)(7,5) mustEqual "2"
     }
   }

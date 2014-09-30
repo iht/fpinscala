@@ -32,12 +32,27 @@ import chap02.Ex01.fibo
 
 object Ex01Spec extends Specification {
   "Fibonacci" should {
-    "calculate the nth position of the Fibonacci sequence" in {
+    "calculate the 0th position of the Fibonacci sequence" in {
       fibo(0) mustEqual 1
+    }
+
+    "calculate the 1st position of the Fibonacci sequence" in {
       fibo(1) mustEqual 1
+    }
+
+    "calculate the 2nd position of the Fibonacci sequence" in {
       fibo(2) mustEqual 2
+    }
+
+    "calculate the 3rd position of the Fibonacci sequence" in {
       fibo(3) mustEqual 3
+    }
+
+    "calculate the 4th position of the Fibonacci sequence" in {
       fibo(4) mustEqual 5
+    }
+
+    "calculate the 5th position of the Fibonacci sequence" in {
       fibo(5) mustEqual 8
     }
   }

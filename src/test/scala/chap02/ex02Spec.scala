@@ -32,16 +32,40 @@ import chap02.Ex02.isSorted
 
 object Ex02Spec extends Specification {
   "isSorted" should {
-    "check if some lists are sorted" in {
+    "check a sorted list" in {
       isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual true
+    }
+
+    "check a sorted list in the wrong order" in {
       isSorted(Array(1,2,3,4,5,6), (a: Int, b: Int) => a>=b) mustEqual false
+    }
+
+    "check a reversed list" in {
       isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual true
+    }
+
+    "check a reversed list in the wrong order" in {
       isSorted((Array(1,2,3,4,5,6)).reverse, (a: Int, b: Int) => a<=b) mustEqual false
+    }
+    
+    "check a reversed unsorted list" in {
       isSorted((Array(1,2,3,40,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
+    }
+
+    "check an unsorted list" in {
       isSorted(Array(1,2,3,40,5,6), (a: Int, b: Int) => a<=b) mustEqual false
+    }
+
+    "check an unsorted list starting with large number" in {
       isSorted(Array(100,2,3,4,5,6), (a: Int, b: Int) => a<=b) mustEqual false
+    }
+    "check an unsorted list ending in zero" in {
       isSorted(Array(1,2,3,4,5,0), (a: Int, b: Int) => a<=b) mustEqual false
+    }
+    "check an unsorted list starting with large number (reversed)" in {
       isSorted((Array(100,2,3,4,5,6)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
+    }
+    "check an unsorted list ending in zero (reversed)" in {
       isSorted((Array(1,2,3,4,5,0)).reverse, (a: Int, b: Int) => a>=b) mustEqual false
     }
   }

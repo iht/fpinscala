@@ -32,26 +32,44 @@ import chap02.Ex05.compose
 
 object Ex05Spec extends Specification {
   "Compose" should {
-    "return some composed functions" in {
-      val f1 = (x:Int) => x.toString
-      val g1 = (y:Double) => y.toInt
-      val c1 = g1 andThen f1
+    val f1 = (x:Int) => x.toString
+    val g1 = (y:Double) => y.toInt
+    val c1 = g1 andThen f1
 
-      val f2 = (x: Double) => (x*x).toString
-      val g2 = (y: Int) => y*2.0
-      val c2 = g2 andThen f2
+    val f2 = (x: Double) => (x*x).toString
+    val g2 = (y: Int) => y*2.0
+    val c2 = g2 andThen f2
 
+    "transform Double to String" in {
       f1(g1(7.0)) mustEqual "7"
+    }
+
+    "tranform Int to String" in {
       f2(g2(3)) mustEqual "36.0"
+    }
 
+    "give same result as andThen with Double (7.0)" in {
       f1(g1(7.0)) mustEqual c1(7.0)
+    }
+
+    "give same result as andThen with Double (2.0)" in {
       f1(g1(2.0)) mustEqual c1(2.0)
+    }
+
+    "give same result as andThen with negative Double" in {
       f1(g1(-3.0)) mustEqual c1(-3.0)
+    }
 
+    "give same result as andThen with Int (7)" in {
       f2(g2(7)) mustEqual c2(7)
-      f2(g2(2)) mustEqual c2(2)
-      f2(g2(-3)) mustEqual c2(-3)
+    }
 
+    "give same result as andThen with Int (2)" in {
+      f2(g2(2)) mustEqual c2(2)
+    }
+
+    "give same result as andThen with negative Int" in {
+      f2(g2(-3)) mustEqual c2(-3)
     }
   }
 }

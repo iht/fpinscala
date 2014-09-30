@@ -33,14 +33,24 @@ import scala.math
 
 object Ex03Spec extends Specification {
   "Curry" should {
-    "return some curried functions" in {
-      val f = (x: Double, y: Double) => math.pow(x, y)
-      val g = (a: Int, b: Int) => (a-b).toString
+    val f = (x: Double, y: Double) => math.pow(x, y)
+    val g = (a: Int, b: Int) => (a-b).toString
 
+    "apply power in one direction" in {
       curry(f)(3.0)(2.0) mustEqual 9.0
+    }
+
+    "apply power in opposite direction" in {
       curry(f)(2.0)(3.0) mustEqual 8.0
+    }
+
+    "apply substraction in one direction" in {
       curry(g)(5)(7) mustEqual "-2"
+    }
+
+    "apply substraction in opposite direction" in {
       curry(g)(7)(5) mustEqual "2"
+
     }
   }
 }
