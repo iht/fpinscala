@@ -11,6 +11,10 @@ Crossed examples are finished and included in the repository.
 
 All the rest of exercises are not done yet.
 
+You can find the examples at
+[`src/main/scala`](https://github.com/iht/fpinscala/tree/master/src/main/scala/),
+with a directory (Scala package) for each book chapter.
+
 ### Chapter 2
 
 * ~~Example 2.1~~
