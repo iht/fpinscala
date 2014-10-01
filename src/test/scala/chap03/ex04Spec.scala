@@ -45,9 +45,8 @@ object Ex04Spec extends Specification {
       drop(List(1,2,3,4,5), 1) mustEqual tail(List(1,2,3,4,5))
     }
 
-
     "create Nil with single element list" in {
-      tail(List(5)) mustEqual Nil
+      drop(List(5), 1) mustEqual Nil
     }
   }
 
