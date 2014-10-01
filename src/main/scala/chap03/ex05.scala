@@ -27,8 +27,6 @@
 
 package chap03
 
-import Ex02.tail
-
 object Ex05 {
 
   @annotation.tailrec
