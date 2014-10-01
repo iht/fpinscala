@@ -39,6 +39,10 @@ object Ex02Spec extends Specification {
     "remove the first string" in {
       tail(List("a","b","c")) mustEqual List("b","c")
     }
+
+    "create Nil with single element list" in {
+      tail(List(5)) mustEqual Nil
+    }
   }
 
 }
