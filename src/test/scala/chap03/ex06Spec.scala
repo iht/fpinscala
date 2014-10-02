@@ -39,5 +39,9 @@ object Ex06Spec extends Specification {
     "create Nil" in {
       init(List("a")) mustEqual Nil
     }
+
+    "return Nil if Nil is passed" in {
+      init(Nil) mustEqual Nil
+    }
   }
 }

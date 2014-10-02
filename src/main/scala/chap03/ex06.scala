@@ -28,13 +28,18 @@
 package chap03
 
 object Ex06 {
-  
+
   def init[A](l: List[A]): List[A] = {
-    l match {
-      case Nil => Nil
-      case h :: Nil => Nil
-      case h :: t => h :: init(t)
+    @annotation.tailrec
+    def loop(m: List[A], n: List[A]): List[A] = {
+      m match {
+        case Nil => n
+        case h :: Nil => n
+        case h :: t => loop(t, n :+ h)
+      }
     }
+
+    loop(l, Nil)
   }
 
 }
