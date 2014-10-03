@@ -45,9 +45,19 @@ For each one of the exercises, I try to provide a test. Tests are
 stored in the directory [`src/test/scala`](https://github.com/iht/fpinscala/tree/master/src/test/scala/), and you can reuse them for
 your exercises.
 
-To run the tests, simply execute the following in sbt
+To run all the tests, simply execute the following in sbt
 ```
 > test
+```
+
+To run a specific test, execute
+```
+> testOnly chapXX.exYYSpec
+```
+where `XX` is the chapter number, and `YY` is the exercise number. For
+instance
+```
+> testOnly chap03.ex10Spec
 ```
 
 ## License
