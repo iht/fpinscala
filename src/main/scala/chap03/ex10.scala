@@ -29,18 +29,11 @@ package chap03
 
 object Ex10 {
 
-
+  @annotation.tailrec
   def foldLeft[A,B](l: List[A], z: B)(f: (B,A) => B): B = {
-
-    @annotation.tailrec
-    def loop(m: List[A], z: B, f: (B,A) => B): B = {
-      m match {
+    l match {
         case Nil => z
-        case h::t => loop(t, f(z,h), f)
-      }
+        case h::t => foldLeft(t, f(z,h))(f)
     }
-
-    loop(l, z, f)
   }
-
 }
