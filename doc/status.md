@@ -20,10 +20,9 @@ All the rest of exercises are not done yet.
 |~~Ex. 3.4~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex04Spec.scala)|
 |~~Ex. 3.5~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex05Spec.scala)|
 |~~Ex. 3.6~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex06.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex06Spec.scala)|
-|Ex. 3.7 |   |   |
-|Ex. 3.8 |   |   |
-|Ex. 3.9 |   |   |
-|Ex. 3.10 |   |   |
+|~~Ex. 3.7~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex07.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex07Spec.scala)|
+|~~Ex. 3.9~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex09.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex09Spec.scala)|
+|~~Ex. 3.10~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex10.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex10Spec.scala)|
 |Ex. 3.11 |   |   |
 |Ex. 3.12 |   |   |
 |Ex. 3.13 |   |   |
