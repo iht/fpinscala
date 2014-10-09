@@ -27,7 +27,15 @@ All the rest of exercises are not done yet.
 |~~Ex. 3.12~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex12.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex12Spec.scala)|
 |~~Ex. 3.13~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex13.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex13Spec.scala)|
 |~~Ex. 3.14~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex14.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex14Spec.scala)|
-|Ex. 3.15 |   |   |
+|~~Ex. 3.15~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex14.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex14Spec.scala)|
+| Ex. 3.16   |    |   |
+| Ex. 3.17   |    |   |
+| Ex. 3.18   |    |   |
+| Ex. 3.19   |    |   |
+| Ex. 3.20   |    |   |
+| Ex. 3.21   |    |   |
+| Ex. 3.22   |    |   |
+| Ex. 3.23   |    |   |
 
 [Back to repo home](https://github.com/iht/fpinscala)
 
