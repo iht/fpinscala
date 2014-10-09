@@ -52,12 +52,12 @@ To run all the tests, simply execute the following in sbt
 
 To run a specific test, execute
 ```
-> testOnly chapXX.exYYSpec
+> testOnly chapXX.ExYYSpec
 ```
 where `XX` is the chapter number, and `YY` is the exercise number. For
 instance
 ```
-> testOnly chap03.ex10Spec
+> testOnly chap03.Ex10Spec
 ```
 
 ## License
