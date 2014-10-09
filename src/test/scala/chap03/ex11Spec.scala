@@ -83,6 +83,4 @@ object Ex11Spec extends Specification {
       Ex11.length(List(1.0,2.0,3.0,4.0,5.0)) mustEqual 5
     }
   }
-
-
 }
