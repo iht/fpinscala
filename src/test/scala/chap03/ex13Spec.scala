@@ -43,4 +43,18 @@ object Ex13Spec extends Specification {
       }
     }
   }
+
+  "The foldLeft function" should {
+    "behave like foldLeft (ex. 10) with empty lists" in {
+      Ex13.foldLeft(Nil: List[Int], 0)(_+_) mustEqual Ex10.foldLeft(Nil: List[Int],0)(_+_)
+    }
+
+    "behave like foldLeft (ex. 10) with non-empty lists" in {
+      Ex13.foldLeft(List(1,3,5,4),Nil: List[Int]) {
+        (x,y) => y :: x
+      } mustEqual Ex10.foldLeft(List(1,3,5,4),Nil: List[Int]) {
+        (x,y) => y :: x
+      }
+    }
+  }
 }

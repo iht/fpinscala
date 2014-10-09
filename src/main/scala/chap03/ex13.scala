@@ -32,4 +32,8 @@ object Ex13 {
   def foldRight[A,B](l: List[A], z: B)(f: (A,B) => B): B = {
     Ex10.foldLeft(l,z)((x,y) => f(y,x))
   }
+
+  def foldLeft[A,B](l: List[A], z: B)(f: (B,A) => B): B = {
+    Ex13.foldRight(l,z)((x,y) => f(y,x))
+  }
 }
