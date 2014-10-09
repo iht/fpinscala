@@ -55,5 +55,10 @@ object Ex10Spec extends Specification {
       Ex10.foldLeft(Nil: List[Double], 1.0)(_ * _) mustEqual 1.0
     }
 
+    "behave like foldLeft" in {
+      Ex10.foldLeft(List(1,2),List(3,4))((x,y) => y :: x) mustEqual
+      (List(1,2)).foldLeft(List(3,4))((x,y) => y :: x)
+    }
+
   }
 }
