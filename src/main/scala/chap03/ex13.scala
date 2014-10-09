@@ -30,10 +30,10 @@ package chap03
 object Ex13 {
 
   def foldRight[A,B](l: List[A], z: B)(f: (A,B) => B): B = {
-    Ex10.foldLeft(l,z)((x,y) => f(y,x))
+    Ex10.foldLeft(l, (b: B) => b)((g,x) => b => g(f(x,b)))(z)    
   }
 
   def foldLeft[A,B](l: List[A], z: B)(f: (B,A) => B): B = {
-    Ex13.foldRight(l,z)((x,y) => f(y,x))
+    Ex13.foldRight(l,(b: B) => b)((x,g) => b => g(f(b,x)))(z)
   }
 }
