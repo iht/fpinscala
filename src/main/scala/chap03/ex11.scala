@@ -47,8 +47,3 @@ object Ex11 {
     Ex10.foldLeft(l, 0) ((x,y) => x + 1)
   }
 }
-
-
-
-
-
