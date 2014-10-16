@@ -36,7 +36,7 @@ object Ex20Spec extends Specification {
     }
 
     "behave like Scala flatMap with Nil" in {
-      Ex20.flatMap(Nil: List[Double])(x => List(x)) mustEqual Nil.flatMap(x => x)
+      Ex20.flatMap(Nil: List[Double])(x => List(x)) mustEqual Nil.flatMap(x => List(x))
     }
 
     "behave like Scala flatMap with single value list" in {
