@@ -29,10 +29,16 @@ package chap03
 
 object Ex17 {
   def double2String(l: List[Double]): List[String] = {
-    l match {
-      case Nil => Nil
-      case h :: t => h.toString :: double2String(t)
+    
+    @annotation.tailrec
+    def loop(m: List[Double], a: List[String]): List[String] = {
+      m match {
+	case Nil => a
+	case h :: t => loop(t, a :+ h.toString)
+      }
     }
+
+    loop(l, Nil)
   }
 
 }

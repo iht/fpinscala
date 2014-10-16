@@ -28,8 +28,8 @@ All the rest of exercises are not done yet.
 |~~Ex. 3.13~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex13.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex13Spec.scala)|
 |~~Ex. 3.14~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex14.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex14Spec.scala)|
 |~~Ex. 3.15~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex15.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex15Spec.scala)|
-| ~~Ex. 3.16~~   |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex16.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex16Spec.scala)|
-| Ex. 3.17   |    |   |
+| ~~Ex. 3.16~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex16.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex16Spec.scala)|
+| ~~Ex. 3.17~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex17.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex17Spec.scala)|
 | Ex. 3.18   |    |   |
 | Ex. 3.19   |    |   |
 | Ex. 3.20   |    |   |
