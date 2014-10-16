@@ -30,9 +30,15 @@ package chap03
 object Ex20 {
 
   def flatMap[A,B](l: List[A])(f: A => List[B]): List[B] = {
-    l match {
-      case Nil => Nil
-      case h :: t => f(h) ++ flatMap(t)(f)
+
+    @annotation.tailrec
+    def loop(m: List[A], a: List[B]): List[B] = {
+      m match {
+	case Nil => a
+	case h :: t => loop(t, a ++ f(h))
+      }
     }
+
+    loop(l, Nil)
   }
 }
