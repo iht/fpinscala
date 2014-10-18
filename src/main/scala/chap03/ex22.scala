@@ -36,10 +36,16 @@ object Ex22 {
 
     val add = implicitly[Numeric[A]].plus _
 
-    (l1, l2) match {
-      case (Nil, _) => Nil
-      case (_, Nil) => Nil
-      case (h1::t1, h2::t2) => add(h1,h2) :: addTwoLists(t1,t2)
-    }
+    @annotation.tailrec
+    def loop(l1: List[A], l2: List[A], s: List[A]): List[A] = {
+
+      (l1, l2) match {
+	case (Nil, _) => s
+	case (_, Nil) => s
+	case (h1::t1, h2::t2) => loop(t1,t2,s :+ add(h1,h2))
+      }
+    }    
+
+    loop(l1,l2,Nil)
   }
 }
