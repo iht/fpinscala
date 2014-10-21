@@ -28,10 +28,10 @@
 package chap03
 
 object Ex23 {
-    def zipWith[A](l1: List[A], l2: List[A])(f: (A,A) => A): List[A] = {
+    def zipWith[A,B](l1: List[A], l2: List[A])(f: (A,A) => B): List[B] = {
     assert(l1.length == l2.length)
     @annotation.tailrec
-    def loop(l1: List[A], l2: List[A], s: List[A]): List[A] = {
+    def loop(l1: List[A], l2: List[A], s: List[B]): List[B] = {
 
       (l1, l2) match {
 	case (Nil, _) => s
