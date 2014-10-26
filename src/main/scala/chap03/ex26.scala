@@ -30,7 +30,34 @@ package chap03
 import adt._
 
 object Ex26 {
+  
+  // Tail recursive version
   def maximum[A: Numeric](t: Tree[A]): A = {
+    val maxOp = implicitly[Numeric[A]].max _  
+
+    // This should be the smallest possible value for
+    // Numeric type A
+    // However, Numeric.MinValue is not defined in Scala,
+    // so we are using Int.MinValue
+    // (it will fail for values lower that Int.MinValue, e.g.
+    // with Doubles smaller than Int.MinValue)
+    val zero = implicitly[Numeric[A]].fromInt(Int.MinValue)
+
+    @annotation.tailrec
+    def loop(t1: List[Tree[A]], m: A): A = {
+      t1 match {
+	case Nil => m
+	case Leaf(x) :: lt => loop(lt, maxOp(m,x))
+	case Branch(l,r) :: lt =>  loop(l :: r :: lt, m)
+      }
+    }
+
+    loop(List(t), zero)
+  }
+
+  // Naive version
+  // Causes stack overflow with very deep trees
+  def maximumNaive[A: Numeric](t: Tree[A]): A = {
     val maxOp = implicitly[Numeric[A]].max _
     t match {
       case Leaf(x) => x

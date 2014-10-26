@@ -37,9 +37,9 @@ object Ex26Spec extends Specification {
       Ex26.maximum(Leaf(0)) mustEqual 0
     }
 
-    "gives the right size for some simple trees" in {
-      val tree2 = Branch(Leaf(1.4),Leaf(2.5))
-      Ex26.maximum(tree2) mustEqual 2.5
+    "gives the right max for some simple trees" in {
+      val tree2 = Branch(Leaf(-1.4),Leaf(-2.5))
+      Ex26.maximum(tree2) mustEqual -1.4
       val tree3 = Branch(tree2, Leaf(7.6))
       Ex26.maximum(tree3) mustEqual 7.6
 
