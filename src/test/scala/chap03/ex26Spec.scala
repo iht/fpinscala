@@ -50,7 +50,7 @@ object Ex26Spec extends Specification {
       Ex26.maximum(tree5b) mustEqual 7.6
 
       val tree4 = Branch(tree2, tree2)
-      Ex26.maximum(tree4) mustEqual 2.5
+      Ex26.maximum(tree4) mustEqual -1.4
 
       val tree9 = Branch(tree4, tree5b)
       Ex26.maximum(tree9) mustEqual 7.6
