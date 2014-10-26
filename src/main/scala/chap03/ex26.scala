@@ -61,7 +61,7 @@ object Ex26 {
     val maxOp = implicitly[Numeric[A]].max _
     t match {
       case Leaf(x) => x
-	case Branch(l, r) => maxOp(maximum(l), maximum(r))
+      case Branch(l, r) => maxOp(maximum(l), maximum(r))
     }
   }
 }
