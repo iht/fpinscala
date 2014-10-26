@@ -30,7 +30,27 @@ package chap03
 import adt._
 
 object Ex25 {
+
   def size[A](t: Tree[A]): Int = {
+
+    // Using a list we flatten the tree, and model a stack-like
+    // structure, which makes it possible to write size using
+    // tail recursion
+    @annotation.tailrec
+    def loop(t1: List[Tree[A]], s: Int): Int = {
+      t1 match {
+	case Nil => s
+	case Leaf(_) :: lt => loop(lt, s + 1)
+	case Branch(l,r) :: lt => loop(l :: r :: lt, s)
+      }
+    }
+
+    loop(List(t), 0)
+  }
+
+  // The same exercise, solved using a naive approach
+  // This solution will cause a stack overflow for very deep trees
+  def sizeNaive[A](t: Tree[A]): Int = {
     t match {
       case Leaf(_) => 1
       case Branch(l,r) => Ex25.size(l) + Ex25.size(r)
