@@ -32,7 +32,7 @@ import adt._
 import org.specs2.mutable._
 
 object Ex25Spec extends Specification {
-  "The hasSubsequence function" should {
+  "The size function" should {
     "works with a single leaf tree" in {
       Ex25.size(Leaf(0)) mustEqual 1
     }
