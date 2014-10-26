@@ -38,7 +38,7 @@ All the rest of exercises are not done yet.
 | ~~Ex. 3.23~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex23.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex23Spec.scala)|  
 | ~~Ex. 3.24~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex24.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex24Spec.scala)|  
 | ~~Ex. 3.25~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex25.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex25Spec.scala)|  
-| Ex. 3.26 | | |
+| ~~Ex. 3.26~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex26.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex26Spec.scala)|  
 | Ex. 3.27 | | |
 | Ex. 3.28 | | |
 | Ex. 3.29 | | |
