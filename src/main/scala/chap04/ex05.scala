@@ -34,21 +34,17 @@ object Ex05 {
 
   def traverse[A,B](a: List[A])(f: A => Option[B]): Option[List[B]] = {
     @annotation.tailrec
-    def loop(as: List[A], bs: List[B]): List[B] = {
+    def loop(as: List[A], bs: Option[List[B]]): Option[List[B]] = {
       as match {
         case Nil => bs
         case x :: xs => f(x) match {
-          case None => Nil
-          case Some(z) => loop(xs, bs :+ z)
+          case None => None
+          case Some(z) => loop(xs, Some(bs.getOrElse(Nil) :+ z))
         }
       }
     }
 
-    val l = loop(a, Nil)
-    l match {
-      case Nil => None
-      case _ => Some(l)
-    }
+    loop(a, None)
   }
 
   def sequence[A](a: List[Option[A]]): Option[List[A]] = {
