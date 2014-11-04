@@ -52,17 +52,17 @@ object Ex05Spec extends Specification {
       Ex05.traverse(l)(identity) mustEqual None
     }
 
-    "return None with a list ending in None" in {
+    "return a list of Ints given a list of Options" in {
       val l = List(Some(1),Some(2),Some(3),Some(4))
       Ex05.traverse(l)(identity) mustEqual Some(List(1,2,3,4))
     }
 
-    "return an option of a list of Strings" in {
+    "return an option of a list of Strings (Ints)" in {
       val l = List(1,2,3,4)
       Ex05.traverse(l)(x => Some(x.toString)) mustEqual Some(List("1","2","3","4"))
     }
 
-    "return an option of a list of Strings" in {
+    "return an option of a list of Strings (Doubles)" in {
       val l = List(1.,2.,3.,4.)
       Ex05.traverse(l)(x => Some(x.toString)) mustEqual Some(List("1.0","2.0","3.0","4.0"))
     }
