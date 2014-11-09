@@ -32,10 +32,6 @@ import errorhandling._
 
 object Ex07 {
 
-  def Try[A](a: => A): Either[String, A] =
-    try Right(a)
-    catch { case e: java.lang.NumberFormatException => Left("Str to int exception") }
-
   def sequence[E,A](es: List[Either[E,A]]): Either[E, List[A]] = {
     Ex07.traverse(es)(identity)
   }

@@ -65,14 +65,19 @@ object Ex07Spec extends Specification {
     }
 
     "return the first left found in the list" in {
+
+      def Try[A](a: => A): Either[String, A] =
+        try Right(a)
+        catch { case e: java.lang.NumberFormatException => Left("Str to int exception") }
+
       val x = List("1","2","x","5")
-      Ex07.traverse(x)(n => Ex07.Try(n.toInt)) mustEqual Left("Str to int exception")
+      Ex07.traverse(x)(n => Try(n.toInt)) mustEqual Left("Str to int exception")
 
       val y = List("1","2","3","x")
-      Ex07.traverse(y)(n => Ex07.Try(n.toInt)) mustEqual Left("Str to int exception")
+      Ex07.traverse(y)(n => Try(n.toInt)) mustEqual Left("Str to int exception")
 
       val z = List("x","2","3","5")
-      Ex07.traverse(z)(n => Ex07.Try(n.toInt)) mustEqual Left("Str to int exception")
+      Ex07.traverse(z)(n => Try(n.toInt)) mustEqual Left("Str to int exception")
     }
   }
 }
