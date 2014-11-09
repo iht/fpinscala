@@ -48,7 +48,7 @@ All the rest of exercises are not done yet.
 |~~Ex. 4.3~~     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex03Spec.scala)|  
 |~~Ex. 4.4~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex04Spec.scala)|  
 |~~Ex. 4.5~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex05Spec.scala)|  
-|Ex. 4.6            |      |      |
+|~~Ex. 4.6~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Either.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex06Spec.scala)|  
 |Ex. 4.7            |      |      |
 |Ex. 4.8            |      |      |
 
