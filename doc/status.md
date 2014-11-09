@@ -50,7 +50,24 @@ All the rest of exercises are not done yet.
 |~~Ex. 4.5~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex05Spec.scala)|  
 |~~Ex. 4.6~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Either.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex06Spec.scala)|  
 |~~Ex. 4.7~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex07.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex07Spec.scala)|  
-|Ex. 4.8            |      |      |
+|*Ch. 5*            |      |      |
+|Ex. 5.1            |      |      |
+|Ex. 5.2            |      |      |
+|Ex. 5.3            |      |      |
+|Ex. 5.4            |      |      |
+|Ex. 5.5            |      |      |
+|Ex. 5.6            |      |      |
+|Ex. 5.7            |      |      |
+|Ex. 5.8            |      |      |
+|Ex. 5.9            |      |      |
+|Ex. 5.10            |      |      |
+|Ex. 5.11            |      |      |
+|Ex. 5.12            |      |      |
+|Ex. 5.13            |      |      |
+|Ex. 5.14            |      |      |
+|Ex. 5.15            |      |      |
+|Ex. 5.16            |      |      |
+
 
 [Back to repo home](https://github.com/iht/fpinscala)
 
