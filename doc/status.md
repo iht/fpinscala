@@ -53,7 +53,7 @@ All the rest of exercises are not done yet.
 |*Ch. 5*            |      |      |
 |~~Ex. 5.1~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L33) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex01Spec.scala)|  
 |~~Ex. 5.2~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L46) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex02Spec.scala)|  
-|Ex. 5.3            |      |      |
+|~~Ex. 5.3~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L93) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex03Spec.scala)|  
 |Ex. 5.4            |      |      |
 |Ex. 5.5            |      |      |
 |Ex. 5.6            |      |      |
