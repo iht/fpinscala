@@ -45,23 +45,49 @@ sealed trait Stream[+A] {
 
   // Exercise 5.02
   def take(n: Int): Stream[A] = {
-    if (n == 0)
-      Empty
+
+    @annotation.tailrec
+    def loop(s: Stream[A], nloop: Int, so: Stream[A]): Stream[A] = {
+    if (nloop == 0)
+      so
     else
-      this match {
-        case Empty => Empty
-        case Cons(h,t) => Cons(h, () => t().take(n-1))
+      s match {
+        case Empty => so
+        case Cons(h,t) => loop(t(), nloop-1, Cons(h, () => so))
       }
+    }
+
+    loop(this, n, Empty).reverse
   }
 
+
   def drop(n: Int): Stream[A] = {
-    if (n == 0)
-      this
+
+    @annotation.tailrec
+    def loop(s1: Stream[A], nloop: Int): Stream[A] = {
+    if (nloop == 0)
+      s1
     else
-      this match {
+      s1 match {
         case Empty => Empty
-        case Cons(h,t) => t().drop(n-1)        
+        case Cons(h,t) => loop(t(), nloop-1)
       }
+    }
+
+    loop(this, n)
+  }
+
+  // For convenience with tail recursive implementations
+  def reverse: Stream[A] = {
+    @annotation.tailrec
+    def loop(s1: Stream[A], s2: Stream[A]): Stream[A] = {
+      s1 match {
+        case Empty => s2
+        case Cons(h,t) => loop(t(), Cons(h, () => s2))
+      }
+    }
+
+    loop(this, Empty)
   }
 }
 case object Empty extends Stream[Nothing]
