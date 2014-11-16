@@ -92,10 +92,16 @@ sealed trait Stream[+A] {
 
   // Exercise 5.3
   def takeWhile(p: A => Boolean): Stream[A] = {
-    this match {
-      case Empty => Empty
-      case Cons(h,t) => if (p(h())) Cons(h, () => t().takeWhile(p)) else Empty
+
+    @annotation.tailrec
+    def loop(s: Stream[A], so: Stream[A]): Stream[A] = {
+      s match {
+        case Empty => so
+        case Cons(h,t) => if (p(h())) loop(t(), Cons(h, () => so)) else so
+      }
     }
+
+    loop(this, Empty).reverse
   }
 }
 case object Empty extends Stream[Nothing]
