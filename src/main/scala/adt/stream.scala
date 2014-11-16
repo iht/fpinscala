@@ -31,10 +31,16 @@ package adt
 sealed trait Stream[+A] {
   // Exercise 5.01
   def toList: List[A] = {
-    this match {
-      case Cons(h, t) => h() :: t().toList
-      case Empty => Nil
+
+    @annotation.tailrec
+    def loop(s: Stream[A], l: List[A]): List[A] = {
+      s match {
+        case Cons(h, t) => loop(t(), l :+ h())
+        case Empty => l
+      }
     }
+
+    loop(this, Nil)
   }
 }
 case object Empty extends Stream[Nothing]
