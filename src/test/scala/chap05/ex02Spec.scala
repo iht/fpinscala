@@ -70,5 +70,9 @@ object Ex02Spec extends Specification {
       Stream(None,Some(1),None,Some(2),None,Some(3)).drop(6).toList mustEqual Empty.toList
     }
 
+    "return empty if n > size of stream" in {
+      Stream(None,Some(1),None,Some(2),None,Some(3)).drop(8).toList mustEqual Empty.toList
+    }
+
   }
 }
