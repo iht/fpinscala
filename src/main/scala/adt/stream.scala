@@ -90,19 +90,19 @@ sealed trait Stream[+A] {
     loop(this, Empty)
   }
 
-  // Exercise 5.3
-  def takeWhile(p: A => Boolean): Stream[A] = {
+  // Exercise 5.3 (commented for exercise 5.5)
+//  def takeWhile(p: A => Boolean): Stream[A] = {
 
-    @annotation.tailrec
-    def loop(s: Stream[A], so: Stream[A]): Stream[A] = {
-      s match {
-        case Empty => so
-        case Cons(h,t) => if (p(h())) loop(t(), Cons(h, () => so)) else so
-      }
-    }
+//    @annotation.tailrec
+//    def loop(s: Stream[A], so: Stream[A]): Stream[A] = {
+//      s match {
+//        case Empty => so
+//        case Cons(h,t) => if (p(h())) loop(t(), Cons(h, () => so)) else so
+//      }
+//    }
 
-    loop(this, Empty).reverse
-  }
+//    loop(this, Empty).reverse
+//  }
 
   // Exercise 5.4
   def forAll(p: A => Boolean): Boolean = {
@@ -116,6 +116,18 @@ sealed trait Stream[+A] {
     }
 
     loop(this)
+  }
+
+  // Exercise 5.5
+  def foldRight[B](z: => B)(f: (A, => B) => B): B = {
+    this match {
+      case Cons(h,t) => f(h(), t().foldRight(z)(f))
+      case _ => z
+    }
+  }
+
+  def takeWhile(p: A => Boolean): Stream[A] = {
+    this.foldRight(Empty: Stream[A])((x,y) => if (p(x)) Cons(() => x,() => y) else Empty)
   }
 }
 case object Empty extends Stream[Nothing]
