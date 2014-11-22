@@ -129,6 +129,11 @@ sealed trait Stream[+A] {
   def takeWhile(p: A => Boolean): Stream[A] = {
     this.foldRight(Empty: Stream[A])((x,y) => if (p(x)) Cons(() => x,() => y) else Empty)
   }
+
+  // Exercise 5.6
+  def headOption: Option[A] = {
+    this.foldRight(None: Option[A])((x,y) => Some(x))
+  }
 }
 case object Empty extends Stream[Nothing]
 case class Cons[+A](h: () => A, t: () => Stream[A]) extends Stream[A]
