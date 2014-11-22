@@ -103,6 +103,14 @@ sealed trait Stream[+A] {
 
     loop(this, Empty).reverse
   }
+
+  // Exercise 5.4
+  def forAll(p: A => Boolean): Boolean = {
+    this match {
+      case Empty => true
+      case Cons(h,t) => p(h()) && t().forAll(p)
+    }
+  }
 }
 case object Empty extends Stream[Nothing]
 case class Cons[+A](h: () => A, t: () => Stream[A]) extends Stream[A]
