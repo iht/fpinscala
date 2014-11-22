@@ -106,10 +106,16 @@ sealed trait Stream[+A] {
 
   // Exercise 5.4
   def forAll(p: A => Boolean): Boolean = {
-    this match {
-      case Empty => true
-      case Cons(h,t) => p(h()) && t().forAll(p)
+
+    @annotation.tailrec
+    def loop(s: Stream[A]): Boolean = {
+      s match {
+        case Empty => true
+        case Cons(h,t) => p(h()) && loop(t())        
+      }
     }
+
+    loop(this)
   }
 }
 case object Empty extends Stream[Nothing]
