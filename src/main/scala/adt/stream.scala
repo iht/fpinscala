@@ -174,4 +174,11 @@ object Stream {
 
   // Exercise 5.9
   def from(n: Int): Stream[Int] = Stream.cons(n, from(n+1))
+
+  // Exercise 5.10
+  def fibs: Stream[Int] = {
+    def loop(n1: Int, n2: Int): Stream[Int] = cons(n1, cons(n2, loop(n1+n2, n1+n2+n2)))
+
+    loop(0,1)
+  }
 }
