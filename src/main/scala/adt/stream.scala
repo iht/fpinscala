@@ -1,4 +1,4 @@
-/* Copyright (c) 2014 Israel Herraiz <isra@herraiz.org>
+/* Copyright (c) 2015 Israel Herraiz <isra@herraiz.org>
  * 
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -180,5 +180,13 @@ object Stream {
     def loop(n1: Int, n2: Int): Stream[Int] = cons(n1, cons(n2, loop(n1+n2, n1+n2+n2)))
 
     loop(0,1)
+  }
+
+  // Exercise 5.11
+  def unfold[A,S](z: S)(f: S => Option[(A,S)]): Stream[A] = {
+    f(z) match {
+      case Some((value, state)) => Stream.cons(value, unfold(state)(f))
+      case _ => Empty
+    }
   }
 }
