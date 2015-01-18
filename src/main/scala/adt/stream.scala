@@ -169,18 +169,18 @@ object Stream {
     if (as.isEmpty) empty else cons(as.head, apply(as.tail: _*))    
   }
 
-  // Exercise 5.8
-  def constant[A](a: A): Stream[A] = Stream.cons(a, constant(a))
+  // // Exercise 5.8 (commented for exercise 5.12)
+  // def constant[A](a: A): Stream[A] = Stream.cons(a, constant(a))
 
-  // Exercise 5.9
-  def from(n: Int): Stream[Int] = Stream.cons(n, from(n+1))
+  // // Exercise 5.9
+  // def from(n: Int): Stream[Int] = Stream.cons(n, from(n+1))
 
-  // Exercise 5.10
-  def fibs: Stream[Int] = {
-    def loop(n1: Int, n2: Int): Stream[Int] = cons(n1, cons(n2, loop(n1+n2, n1+n2+n2)))
+  // // Exercise 5.10
+  // def fibs: Stream[Int] = {
+  //   def loop(n1: Int, n2: Int): Stream[Int] = cons(n1, cons(n2, loop(n1+n2, n1+n2+n2)))
 
-    loop(0,1)
-  }
+  //   loop(0,1)
+  // }
 
   // Exercise 5.11
   def unfold[A,S](z: S)(f: S => Option[(A,S)]): Stream[A] = {
@@ -189,4 +189,15 @@ object Stream {
       case _ => Empty
     }
   }
+
+  // Exercise 5.12
+  def constant[A](a: A): Stream[A] = unfold(a){x => Some((x,x))}
+
+  def from(n: Int): Stream[Int] = unfold(n){x => Some((x,x+1))}
+
+  def fibs: Stream[Int] = {
+    unfold((0,1)) {
+      case (n1, n2) => Some((n1, (n1+n2, n1)))
+    }
+  }  
 }
