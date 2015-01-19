@@ -36,8 +36,8 @@ object Ex01Spec extends Specification {
 
       var r1: RNG = SimpleRNG(-123456)
 
-      // Create a list of 1000 RNGs
-      val listOfRNGs = (1 to 1000).map { x =>
+      // Create a list of 10000 RNGs
+      val listOfRNGs = (1 to 10000).map { x =>
         val r = r1.nextInt._2
         r1 = r
         r
