@@ -63,7 +63,7 @@ All the rest of exercises are not done yet.
 |~~Ex. 5.10~~       |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L178) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex10Spec.scala)|   
 |~~Ex. 5.11~~       |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L185) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex11Spec.scala)|   
 |~~Ex. 5.12~~       |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L193) | [Test (constant)](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex08Spec.scala) [Test (from)](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex09Spec.scala) [Test (fibs)](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex10Spec.scala)|   
-|Ex. 5.13            |      |      |
+|~~Ex. 5.13~~       |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap05/ex13.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex13Spec.scala)|   
 |Ex. 5.14            |      |      |
 |Ex. 5.15            |      |      |
 |Ex. 5.16            |      |      |
