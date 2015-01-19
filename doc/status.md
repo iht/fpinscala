@@ -66,7 +66,7 @@ All the rest of exercises are not done yet.
 |~~Ex. 5.13~~       |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap05/ex13.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex13Spec.scala)|   
 |~~Ex. 5.14~~        |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap05/ex14.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex14Spec.scala)|   
 |~~Ex. 5.15~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap05/ex15.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex15Spec.scala)|   
-|Ex. 5.16            |      |      |
+|~~Ex. 5.16~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap05/ex16.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex16Spec.scala)|   
 
 
 [Back to repo home](https://github.com/iht/fpinscala)
