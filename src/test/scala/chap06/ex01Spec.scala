@@ -43,7 +43,7 @@ object Ex01Spec extends Specification {
         r
       }
 
-      listOfRNGs.map(RNG.nonNegativeInt(_)._1) must contain(be_>(0)).forall
+      listOfRNGs.map(RNG.nonNegativeInt(_)._1) must contain(be_>=(0)).forall
     }
   }
 }
