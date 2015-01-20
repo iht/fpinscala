@@ -70,8 +70,8 @@ All the rest of exercises are not done yet.
 |*Ch. 6*            |      |      |
 |~~Ex. 6.1~~    |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L45) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex01Spec.scala)|   
 |~~Ex. 6.2~~    |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L58) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex02Spec.scala)|   
-|Ex. 6.3     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L67) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex03Spec.scala)|   
-|Ex. 6.4            |      |      |
+|~~Ex. 6.3~~     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L67) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex03Spec.scala)|   
+|~~Ex. 6.4~~     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L88) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex04Spec.scala)|   
 |Ex. 6.5            |      |      |
 |Ex. 6.6            |      |      |
 |Ex. 6.7            |      |      |

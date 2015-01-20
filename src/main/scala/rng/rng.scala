@@ -84,4 +84,17 @@ object RNG {
 
     ((d1,d2,d3),rng3)
   }
+
+  // Exercise 6.4
+  def ints(count: Int)(rng: RNG): (List[Int], RNG) = {
+    var r = rng
+
+    val l = (1 to count).map { x => 
+      val (n, r2) = r.nextInt
+      r = r2
+      n
+    }.toList
+
+    (l, r)
+  }
 }
