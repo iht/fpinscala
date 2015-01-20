@@ -21,46 +21,31 @@
  * SOFTWARE.
  */  
 
-// -------------------------------------------
-// Random Num. Gen. for exercises in chapter 6
-// -------------------------------------------
+// ---------------------
+// Test for example 6.01
+// ---------------------
 
-package rng
+package chap06
 
-trait RNG {
-  def nextInt: (Int, RNG)
-}
+import org.specs2.mutable._
+import rng._
 
-case class SimpleRNG(seed: Long) extends RNG {
-  def nextInt: (Int, RNG) = {
-    val newSeed =  (seed * 0x5DEECE66DL + 0xBL) & 0xFFFFFFFFFFFFL
-    val nextRNG = SimpleRNG(newSeed)
-    val n = (newSeed >>> 16).toInt
+object Ex02Spec extends Specification {
+  "The double method" should {
+    "return always numbers 0<=x<1" in {      
 
-    (n, nextRNG)
-  }
-}
+      var r1: RNG = SimpleRNG(-123456)
 
-object RNG {
-  // Exercise 6.1
-  def nonNegativeInt(rng: RNG): (Int, RNG) = {
-    val (n, nextRNG) = rng.nextInt
+      // Create a list of 10000 RNGs
+      val listOfRNGs = (1 to 10000).map { x =>
+        val r = r1.nextInt._2
+        r1 = r
+        r
+      }
 
-    val nonNegative = n match {
-      case Int.MinValue => Int.MaxValue
-      case x if x < 0 => -x
-      case x => x
+      val ranDoubles = listOfRNGs.map(x => RNG.double(x)._1)
+
+      ranDoubles must contain(be_>=(0.0) and be_<(1.0)).forall
     }
-
-    (nonNegative, nextRNG)
-  }
-
-  // Exercise 6.2
-  def double(rng: RNG): (Double, RNG) = {
-    val (n, nextRNG) = RNG.nonNegativeInt(rng)
-
-    val doubleRan = n.toDouble/(Int.MaxValue.toDouble+1.0)
-
-    (doubleRan, nextRNG)
   }
 }
