@@ -63,4 +63,25 @@ object RNG {
 
     (doubleRan, nextRNG)
   }
+
+  // Exercise 6.3
+  def intDouble(rng: RNG): ((Int, Double), RNG) = {
+    val (n, rng2) = RNG.nonNegativeInt(rng)
+    val (x, _) = RNG.double(rng)
+
+    ((n,x),rng2)
+  }
+
+  def doubleInt(rng: RNG): ((Double, Int), RNG) = {
+    val (p,rng2) = RNG.intDouble(rng)
+    ((p._2, p._1), rng2)
+  }
+
+  def double3(rng: RNG): ((Double,Double,Double),RNG) = {
+    val (d1, rng1) = RNG.double(rng)
+    val (d2, rng2) = RNG.double(rng1)
+    val (d3, rng3) = RNG.double(rng2)
+
+    ((d1,d2,d3),rng3)
+  }
 }
