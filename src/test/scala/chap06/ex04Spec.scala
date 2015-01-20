@@ -33,8 +33,10 @@ import rng._
 object Ex04Spec extends Specification {
   val r: RNG = SimpleRNG(-123456)
 
-  "The intDouble method" should {
-    "return always nonNegative ints and double numbers 0<=x<1" in {
+  "The ints method" should {
+    "return a list of random integers" in {
+      RNG.ints(0)(r)._1 mustEqual Nil
+      RNG.ints(1)(r)._1 must have size(1)
       RNG.ints(10)(r)._1 must have size(10)
       RNG.ints(23)(r)._1 must have size(23)
       RNG.ints(100)(r)._1 must have size(100)
