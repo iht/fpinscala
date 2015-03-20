@@ -131,4 +131,28 @@ object RNG {
       (f(a,b), rng2)
     }
   }
+
+  // Exercise 6.7
+  def sequence[A](fs: List[Rand[A]]): Rand[List[A]] = {
+    rng => {
+
+      @annotation.tailrec
+      def loop(tail: List[Rand[A]], build: (List[A], RNG)): (List[A], RNG) = {
+        tail match {
+          case Nil => build
+          case h :: t =>
+            val (l, rng2) = build
+            val (a, rng3) = h(rng)
+            loop(t, (l :+ a, rng3))
+        }
+      }
+
+      loop(fs, (Nil: List[A], rng))
+    }
+  }
+
+  def intsWithSeq(count: Int): Rand[List[Int]] = {
+    val l = List.fill(count)(int)
+    sequence(l)
+  }
 }
