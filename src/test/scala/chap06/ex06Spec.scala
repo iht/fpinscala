@@ -22,7 +22,7 @@
  */  
 
 // ---------------------
-// Test for example 6.05
+// Test for example 6.06
 // ---------------------
 
 package chap06
