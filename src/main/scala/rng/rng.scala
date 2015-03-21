@@ -175,4 +175,23 @@ object RNG {
         nonNegativeLessThan(mod)
     }
   }
+
+  // Exercise 6.9
+  def mapWithFM[A,B](s: Rand[A])(f: A => B): Rand[B] = {
+    flatMap(s)(x => { rng => (f(x), rng) })
+  }
+
+  def map2WithFM[A,B,C](ra: Rand[A], rb: Rand[B])(f: (A,B) => C): Rand[C] = {
+    val rab = { rng: RNG =>
+      val (a,rng1) = ra(rng)
+      val (b,rng2) = rb(rng1)
+
+      ((a,b),rng2)
+    }
+
+    flatMap(rab) {
+      case (a,b) =>
+        { rng3 => (f(a,b), rng3)}
+    }
+  }
 }

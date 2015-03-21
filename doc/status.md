@@ -76,7 +76,7 @@ All the rest of exercises are not done yet.
 |~~Ex. 6.6~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L125) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex06Spec.scala)|   
 |~~Ex. 6.7~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L135) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex07Spec.scala)|   
 |~~Ex. 6.8~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L159) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex08Spec.scala)|   
-|Ex. 6.9            |      |      |
+|~~Ex. 6.9~~             |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L179) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex09Spec.scala)|   
 |Ex. 6.10           |      |      |
 |Ex. 6.11           |      |      |
 
