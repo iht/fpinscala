@@ -197,58 +197,63 @@ object RNG {
 }
 
 // Exercise 6.10
-case class State[S,+A](run: S => (A,S))
+case class State[S,+A](run: S => (A,S)) {
 
-object State {
-
-  def map[S,A,B](a: S => (A,S))(f: A => B): S => (B,S) = {
-    { s =>
-      val (va,s1) = a(s)
+  def map[B](f: A => B): State[S,B] = {
+    State { s =>
+      val (va,s1) = run(s)
       (f(va), s1)
     }
   }
 
-  def unit[S,A](a: A): S => (A,S) = {
-    { s => (a,s) }
-  }
-
-  def flatMap[S,A,B](f: S => (A,S))(g: A => S => (B,S)): S => (B,S) = {
-    s => {
-      val (a, s2) = f(s)
-      val (b, s3) = g(a)(s2)
-      (b, s3)
+  def flatMap[B](g: A => State[S,B]): State[S,B] = {
+    State {
+      s => {
+        val (a, s2) = run(s)
+        val (b, s3) = g(a).run(s2)
+        (b, s3)
+      }
     }
   }
 
-  def map2[S,A,B,C](a: S => (A,S), b: S => (B,S))(f: (A,B) => C): S => (C,S) = {
-    val sab = { s: S =>
-      val (va,s1) = a(s)
-      val (vb,s2) = b(s1)
+  def map2[B,C](b: State[S,B])(f: (A,B) => C): State[S,C] = {
+    val sab = State { s: S =>
+      val (va,s1) = run(s)
+      val (vb,s2) = b.run(s1)
 
       ((va,vb),s2)
     }
 
-    flatMap(sab) {
+    sab.flatMap {
       case (a,b) =>
-        { s3 => (f(a,b), s3)}
+        State { s3 => (f(a,b), s3)}
     }
   }
+}
 
-  def sequence[S,A](fs: List[S => (A,S)]): S => (List[A],S) = {
-    s => {
+object State {
 
-      @annotation.tailrec
-      def loop(tail: List[S => (A,S)], build: (List[A], S)): (List[A], S) = {
-        tail match {
-          case Nil => build
-          case h :: t =>
-            val (l, s2) = build
-            val (a, s3) = h(s)
-            loop(t, (l :+ a, s3))
+  def unit[S,A](a: A): State[S,A] = {
+    State{ s => (a,s) }
+  }
+
+  def sequence[S,A](fs: List[State[S,A]]): State[S, List[A]] = {
+    State {
+      s => {
+
+        @annotation.tailrec
+        def loop(tail: List[State[S,A]], build: (List[A], S)): (List[A], S) = {
+          tail match {
+            case Nil => build
+            case h :: t =>
+              val (l, s2) = build
+              val (a, s3) = h.run(s)
+              loop(t, (l :+ a, s3))
+          }
         }
-      }
 
-      loop(fs, (Nil: List[A], s))
+        loop(fs, (Nil: List[A], s))
+      }
     }
   }
 }
