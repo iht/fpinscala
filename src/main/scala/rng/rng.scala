@@ -257,3 +257,53 @@ object State {
     }
   }
 }
+
+// Exercise 6.11
+sealed trait Input
+case object Coin extends Input
+case object Turn extends Input
+
+case class Machine(locked: Boolean, candies: Int, coins: Int) {
+  def update(i: Input): Machine = {
+    (i,this) match {
+      case (_,Machine(l,0,n)) =>
+        Machine(l,0,n)
+      case (Coin, Machine(true, c, n)) =>
+        if (c>0) Machine(false, c, n+1)
+        else Machine(true, c, n)      
+      case (Turn, Machine(false, c, n)) =>
+        Machine(true, c-1,n)
+      case (Turn, Machine(true,c,n)) =>
+        Machine(true,c,n)
+      case (Coin, Machine(false,c,n)) =>
+        Machine(false,c,n)
+    }
+  }
+
+  def simulateMachine(inputs: List[Input]): State[Machine, (Int,Int)] = {
+
+    def f = { m: Machine =>
+
+      val (cand,coin) = m match {
+        case Machine(_,c,n) => (c,n)
+      }
+
+      ((cand,coin), m)
+    }
+
+    val s: State[Machine, (Int, Int)] = State(f)
+
+    val result = inputs.foldLeft(s) {
+      case (s1: State[Machine, (Int, Int)], i: Input) =>
+        State { s =>
+
+          val (_, m) = s1.run(this)
+
+          f(m.update(i))
+        }
+    }
+
+    result
+  }
+
+}
