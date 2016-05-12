@@ -79,7 +79,10 @@ All the rest of exercises are not done yet.
 |~~Ex. 6.9~~             |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L179) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex09Spec.scala)|   
 |~~Ex. 6.10~~               |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L199) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex10Spec.scala)|   
 |~~Ex. 6.11~~ | [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L261) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex11Spec.scala)|   
-|*Ch. 7*            |      |      |
+|*Ch. 7*|      |      |
+|Ex. 7.1| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap07/parallel.scala#L47) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap07/ParSpec.scala#L81)|   
+|Ex. 7.2            |      |      |
+|Ex. 7.2            |      |      |
 |Ex. 7.3            |      |      |
 |Ex. 7.4            |      |      |
 |Ex. 7.5            |      |      |
