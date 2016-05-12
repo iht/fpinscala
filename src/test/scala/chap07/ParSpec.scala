@@ -81,39 +81,39 @@ class ParSpec extends Specification {
 class Ex01Spec extends Specification {
   "map2 returns a Par combining two different Pars" in {
     // Same type
-    val l1 = Par.unit(3)
-    val r1 = Par.unit(5)
+    val l1: Par[Int] = Par.unit(3)
+    val r1: Par[Int] = Par.unit(5)
 
-    val m1 = Par.map2(l1,r1)(_*_)
-    val m2 = Par.map2(r1,l1)(_+_)
+    val m1: Par[Int] = Par.map2(l1,r1)(_*_)
+    val m2: Par[Int] = Par.map2(r1,l1)(_+_)
 
     Par.get(m1) mustEqual 3*5
     Par.get(m2) mustEqual 3+5
 
     // Different types
-    val r2 = Par.unit(4.5)
+    val r2: Par[Double] = Par.unit(4.5)
 
-    val m3 = Par.map2(r2,l1)(_*_)
-    val m4 = Par.map2(l1,r2)(_+_)
+    val m3: Par[Double] = Par.map2(r2,l1)(_*_)
+    val m4: Par[Double] = Par.map2(l1,r2)(_+_)
 
     Par.get(m3) mustEqual 4.5*3
     Par.get(m4) mustEqual 4.5+3
 
     // With lists
-    val l3 = Par.unit(List(2,3))
-    val r3 = Par.unit(List(4))
+    val l3: Par[List[Int]] = Par.unit(List(2,3))
+    val r3: Par[List[Int]] = Par.unit(List(4))
 
-    val m5 = Par.map2(l3,r3)(_++_)
-    val m6 = Par.map2(r3,l3)(_++_)
+    val m5: Par[List[Int]] = Par.map2(l3,r3)(_++_)
+    val m6: Par[List[Int]] = Par.map2(r3,l3)(_++_)
 
     Par.get(m5) mustEqual List(2,3,4)
     Par.get(m6) mustEqual List(4,2,3)
 
     // With three different types
-    val l4 = Par(4)
-    val r4 = Par(5.5)
+    val l4: Par[Int] = Par(4)
+    val r4: Par[Double] = Par(5.5)
 
-    val m7 = Par.map2(l4,r4)((x,y) => (x*y).toString)
+    val m7: Par[String] = Par.map2(l4,r4)((x,y) => (x*y).toString)
 
     Par.get(m7) mustEqual (4*5.5).toString
 
