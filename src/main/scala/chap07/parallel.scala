@@ -27,26 +27,50 @@ package chap07
 // Parallelism exercises in chapter 7
 // ----------------------------------
 
-case class Par[A](a: A)
+import java.util.concurrent.{ Callable, ExecutorService, Future, TimeUnit }
+
+// This makes the type Par visible when importing the package
+package object par {
+  type Par[A] = ExecutorService => Future[A]
+}
 
 object Par {
-  def unit[A](a: => A): Par[A] = Par(a)
+  import par.Par
 
-  def get[A](p: Par[A]): A = p.a
+  private case class UnitFuture[A](get: A) extends Future[A] {
+    def isDone: Boolean = true
+    def get(timeout: Long, units: TimeUnit): A = get
+    def isCancelled: Boolean = false
+    def cancel(eventIfRunning: Boolean): Boolean = false
+  }
+
+  def fork[A](p: => Par[A]): Par[A] = {
+    es: ExecutorService => es.submit(new Callable[A] {
+      def call = p(es).get
+    })
+  }
+
+  def unit[A](a: A): Par[A] = (es: ExecutorService) => UnitFuture(a)
+  def lazyUnit[A](a: => A): Par[A] = fork(unit(a))
+
+  def run[A](p: Par[A])(implicit s: ExecutorService): Future[A] = p(s)
+
+  def runNow[A](p: Par[A])(implicit s: ExecutorService): A = run(p).get
 
   def sums(ints: IndexedSeq[Int]): Par[Int] = {
     if (ints.size <= 1) {
       Par.unit(ints.headOption.getOrElse(0))
     } else {
       val (l,r) = ints.splitAt(ints.length/2)
-
       Par.map2(sums(l), sums(r))(_ + _)
     }
   }
 
   // Exercise 7.1
-  def map2[A,B,C](l: Par[A], r: Par[B])(f: (A,B) => C): Par[C] = {
-    // Naive non-parallel implementation to enable testing
-    Par.unit(f(Par.get(l), Par.get(r)))
-  }
+  def map2[A,B,C](pa: Par[A], pb: Par[B])(f: (A,B) => C): Par[C] =
+    (es: ExecutorService) => {
+      val af = pa(es)
+      val bf = pb(es)
+      UnitFuture(f(af.get, bf.get))
+    }
 }
