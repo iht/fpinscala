@@ -9,11 +9,11 @@ All the rest of exercises are not done yet.
 | **Chapter/Exercise** | **Solution** | **Test** |
 | ---------------- | ---- | ---- | 
 | *Ch. 2*          |      |      | 
-| ~~Ex. 2.1~~| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex01.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex01Spec.scala)|
-| ~~Ex. 2.2~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex02Spec.scala)|
-| ~~Ex. 2.3~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex03Spec.scala)|
-| ~~Ex. 2.4~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04Spec.scala)|
-| ~~Ex. 2.5~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex05Spec.scala)|
+| ~~Ex. 2.1~~| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex01.scala#L30-L44) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex01Spec.scala#L33-L59)|
+| ~~Ex. 2.2~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex02.scala#L30-L60) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex02Spec.scala#L33-L72)|
+| ~~Ex. 2.3~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex03.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex03Spec.scala#L34-L56)|
+| ~~Ex. 2.4~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04Spec.scala#L34-L55)|
+| ~~Ex. 2.5~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex05.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex05Spec.scala#L33-L75)|
 |*Ch. 3*            |      |      |
 |~~Ex. 3.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex02Spec.scala)|
 |~~Ex. 3.3~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex03Spec.scala)|
@@ -80,8 +80,8 @@ All the rest of exercises are not done yet.
 |~~Ex. 6.10~~               |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L199) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex10Spec.scala)|   
 |~~Ex. 6.11~~ | [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/rng/rng.scala#L261) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap06/ex11Spec.scala)|   
 |*Ch. 7*|      |      |
-|~~Ex. 7.1~~| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap07/parallel.scala#L70) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap07/ParSpec.scala#L102)|   
-|~~Ex. 7.2~~        | [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap07/parallel.scala#L32) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap07/ParSpec.scala#L35)|
+|~~Ex. 7.1~~| [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap07/parallel.scala#L70-L75) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap07/ParSpec.scala#L102-L147)|   
+|~~Ex. 7.2~~        | [Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap07/parallel.scala#L32-L67) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap07/ParSpec.scala#L35-L100)|
 |Ex. 7.2            |      |      |
 |Ex. 7.3            |      |      |
 |Ex. 7.4            |      |      |
