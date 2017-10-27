@@ -43,13 +43,13 @@ All the rest of exercises are not done yet.
 | ~~Ex. 3.28~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex28.scala#L32-L39) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex28Spec.scala#L34-L70)|  
 | ~~Ex. 3.29~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex29.scala#L32-L82) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex29Spec.scala#L34-L157)|  
 |*Ch. 4*            |      |      |
-|~~Ex. 4.1~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Option.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex01Spec.scala)|  
-|~~Ex. 4.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex02Spec.scala)|  
-|~~Ex. 4.3~~     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex03Spec.scala)|  
-|~~Ex. 4.4~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex04Spec.scala)|  
-|~~Ex. 4.5~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex05Spec.scala)|  
-|~~Ex. 4.6~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Either.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex06Spec.scala)|  
-|~~Ex. 4.7~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex07.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex07Spec.scala)|  
+|~~Ex. 4.1~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Option.scala#L33-L63) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex01Spec.scala#L37-L97)|  
+|~~Ex. 4.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex02.scala#L33-L42) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex02Spec.scala#L33-L43)|  
+|~~Ex. 4.3~~     |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex03.scala#L33-L41) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex03Spec.scala#L33-L50)|  
+|~~Ex. 4.4~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex04.scala#L33-L50) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex04Spec.scala#L33-L65)|  
+|~~Ex. 4.5~~         |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex05.scala#L33-L54) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex05Spec.scala#L33-L104)|  
+|~~Ex. 4.6~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Either.scala#L33-L65) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex06Spec.scala#L33-L88)|  
+|~~Ex. 4.7~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex07.scala#L33-L55) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex07Spec.scala#L33-L85)|  
 |*Ch. 5*            |      |      |
 |~~Ex. 5.1~~          |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L33) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex01Spec.scala)|  
 |~~Ex. 5.2~~           |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/adt/stream.scala#L46) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap05/ex02Spec.scala)|  
