@@ -73,4 +73,10 @@ object Par {
       val bf = pb(es)
       UnitFuture(f(af.get, bf.get))
     }
+
+  // Exercise 7.3 (in progress)
+  def map[A,B,C](pa: Par[A], pb: Par[B])(f: (A,B) => C): Par[C] = {
+
+    ???
+  }
 }
