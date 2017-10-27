@@ -15,33 +15,33 @@ All the rest of exercises are not done yet.
 | ~~Ex. 2.4~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex04.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex04Spec.scala#L34-L55)|
 | ~~Ex. 2.5~~|[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap02/ex05.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap02/ex05Spec.scala#L33-L75)|
 |*Ch. 3*            |      |      |
-|~~Ex. 3.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex02Spec.scala)|
-|~~Ex. 3.3~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex03.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex03Spec.scala)|
-|~~Ex. 3.4~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex04.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex04Spec.scala)|
-|~~Ex. 3.5~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex05.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex05Spec.scala)|
-|~~Ex. 3.6~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex06.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex06Spec.scala)|
-|~~Ex. 3.7~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex07.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex07Spec.scala)|
-|~~Ex. 3.9~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex09.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex09Spec.scala)|
-|~~Ex. 3.10~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex10.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex10Spec.scala)|
-|~~Ex. 3.11~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex11.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex11Spec.scala)|
-|~~Ex. 3.12~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex12.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex12Spec.scala)|
-|~~Ex. 3.13~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex13.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex13Spec.scala)|
-|~~Ex. 3.14~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex14.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex14Spec.scala)|
-|~~Ex. 3.15~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex15.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex15Spec.scala)|
-| ~~Ex. 3.16~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex16.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex16Spec.scala)|
-| ~~Ex. 3.17~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex17.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex17Spec.scala)|
-| ~~Ex. 3.18~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex18.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex18Spec.scala)|
-| ~~Ex. 3.19~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex19.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex19Spec.scala)|
-| ~~Ex. 3.20~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex20.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex20Spec.scala)|
-| ~~Ex. 3.21~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex21.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex21Spec.scala)|
-| ~~Ex. 3.22~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex22.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex22Spec.scala)|
-| ~~Ex. 3.23~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex23.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex23Spec.scala)|  
-| ~~Ex. 3.24~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex24.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex24Spec.scala)|  
-| ~~Ex. 3.25~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex25.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex25Spec.scala)|  
-| ~~Ex. 3.26~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex26.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex26Spec.scala)|  
-| ~~Ex. 3.27~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex27.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex27Spec.scala)|  
-| ~~Ex. 3.28~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex28.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex28Spec.scala)|  
-| ~~Ex. 3.29~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex29.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex29Spec.scala)|  
+|~~Ex. 3.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex02.scala#L32-L37) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex02Spec.scala#L33-L46)|
+|~~Ex. 3.3~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex03.scala#L32-L37) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex03Spec.scala#L33-L46)|
+|~~Ex. 3.4~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex04.scala#L32-L41) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex04Spec.scala#L34-L51)|
+|~~Ex. 3.5~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex05.scala#L32-L51) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex05Spec.scala#L33-L42)|
+|~~Ex. 3.6~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex06.scala#L32-L43) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex06Spec.scala#L33-L46)|
+|~~Ex. 3.7~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex07.scala#L30-L58) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex07Spec.scala#L33-L59)|
+|~~Ex. 3.9~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex09.scala#L34-L36) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex09Spec.scala#L32-L46)|
+|~~Ex. 3.10~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex10.scala#L32-L38) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex10Spec.scala#L32-L63)|
+|~~Ex. 3.11~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex11.scala#L32-L49) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex11Spec.scala#L32-L86)|
+|~~Ex. 3.12~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex12.scala#L32-L34) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex12Spec.scala#L32-L42)|
+|~~Ex. 3.13~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex13.scala#L30-L39) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex13Spec.scala#L32-L85)|
+|~~Ex. 3.14~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex14.scala#L30-L46) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex14Spec.scala#L32-L63)|
+|~~Ex. 3.15~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex15.scala#L30-L37) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex15Spec.scala#L32-L63)|
+| ~~Ex. 3.16~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex16.scala#L32-L49) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex16Spec.scala#L32-L60)|
+| ~~Ex. 3.17~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex17.scala#L30-L44) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex17Spec.scala#L32-L46)|
+| ~~Ex. 3.18~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex18.scala#L30-L45) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex18Spec.scala#L32-L50)|
+| ~~Ex. 3.19~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex19.scala#L30-L46) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex19Spec.scala#L32-L54)|
+| ~~Ex. 3.20~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex20.scala#L30-L44) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex20Spec.scala#L32-L50)|
+| ~~Ex. 3.21~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex21.scala#L30-L41) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex21Spec.scala#L32-L60)|
+| ~~Ex. 3.22~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex22.scala#32-51) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex22Spec.scala#L32-L50)|
+| ~~Ex. 3.23~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex23.scala#L30-L44) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex23Spec.scala#L32-L51)|  
+| ~~Ex. 3.24~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex24.scala#L30-L57) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex24Spec.scala#L32-L67)|  
+| ~~Ex. 3.25~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex25.scala#L32-L59) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex25Spec.scala#L34-L59)|  
+| ~~Ex. 3.26~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex26.scala#L32-L67) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex26Spec.scala#L34-L59)|  
+| ~~Ex. 3.27~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex27.scala#L32-L40) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex27Spec.scala#L34-L71)|  
+| ~~Ex. 3.28~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex28.scala#L32-L39) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex28Spec.scala#L34-L70)|  
+| ~~Ex. 3.29~~  |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap03/ex29.scala#L32-L82) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap03/ex29Spec.scala#L34-L157)|  
 |*Ch. 4*            |      |      |
 |~~Ex. 4.1~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/errorhandling/Option.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex01Spec.scala)|  
 |~~Ex. 4.2~~ |[Code](https://github.com/iht/fpinscala/blob/master/src/main/scala/chap04/ex02.scala) | [Test](https://github.com/iht/fpinscala/blob/master/src/test/scala/chap04/ex02Spec.scala)|  
