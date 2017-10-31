@@ -37,7 +37,7 @@ object Ex02Spec extends Specification {
     }
 
     "return Some value with a non empty Seq" in {
-      Ex02.variance(Seq(1.,2.,3.)) mustEqual Some(10.)
+      Ex02.variance(Seq(1.0, 2.0, 3.0)) mustEqual Some(10.0)
     }
   }  
 }

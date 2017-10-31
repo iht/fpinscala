@@ -63,7 +63,7 @@ object Ex05Spec extends Specification {
     }
 
     "return an option of a list of Strings (Doubles)" in {
-      val l = List(1.,2.,3.,4.)
+      val l = List(1.0, 2.0, 3.0, 4.0)
       Ex05.traverse(l)(x => Some(x.toString)) mustEqual Some(List("1.0","2.0","3.0","4.0"))
     }
 

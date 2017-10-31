@@ -45,7 +45,7 @@ object Ex23Spec extends Specification {
     }
 
     "work with lists of doubles" in {
-      Ex23.zipWith(List(1.,2.,3.), List(4.,5.,6.))(_*_) mustEqual List(4.,10.,18.)
+      Ex23.zipWith(List(1.0, 2.0, 3.0), List(4.0, 5.0, 6.0))(_*_) mustEqual List(4.0, 10.0, 18.0)
     }
   }
 }

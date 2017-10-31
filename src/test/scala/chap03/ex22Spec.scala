@@ -44,7 +44,7 @@ object Ex22Spec extends Specification {
     }
 
     "work with lists of doubles" in {
-      Ex22.addTwoLists(List(1.,2.,3.), List(4.,5.,6.)) mustEqual List(5.,7.,9.)
+      Ex22.addTwoLists(List(1.0, 2.0, 3.0), List(4.0, 5.0, 6.0)) mustEqual List(5.0, 7.0, 9.0)
     }
   }
 }

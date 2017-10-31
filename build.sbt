@@ -32,9 +32,12 @@ homepage := Some(url("https://github.com/iht/fpinscala/"))
 
 startYear := Some(2014)
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.12.4"
 
-libraryDependencies += "org.specs2" %% "specs2" % "2.3.9" % "test"
+libraryDependencies += "org.specs2" %% "specs2-core" % "4.0.0" % "test"
+
+scalacOptions in Test ++= Seq("-Yrangepos")
+
 
 resolvers ++= Seq(Resolver.sonatypeRepo("releases"),
                   Resolver.sonatypeRepo("snaspshots"))
