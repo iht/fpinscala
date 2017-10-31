@@ -1,4 +1,4 @@
-[!Build status](https://travis-ci.org/iht/fpinscala.svg?branch=master)(https://travis-ci.org/iht/fpinscala)
+[![Build status](https://travis-ci.org/iht/fpinscala.svg?branch=master)](https://travis-ci.org/iht/fpinscala)
 
 # Functional Programming in Scala
 
