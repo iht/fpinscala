@@ -1,4 +1,5 @@
 [![Build status](https://travis-ci.org/iht/fpinscala.svg?branch=master)](https://travis-ci.org/iht/fpinscala)
+[![Coverage Status](https://coveralls.io/repos/github/iht/fpinscala/badge.svg?branch=master)](https://coveralls.io/github/iht/fpinscala?branch=master)
 
 # Functional Programming in Scala
 
