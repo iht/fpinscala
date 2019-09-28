@@ -19,7 +19,7 @@
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */  
+ */
 
 // ---------------------
 // Code for example 3.26
@@ -30,10 +30,20 @@ package chap03
 import adt._
 
 object Ex26 {
-  
+
+  // Naive version
+  // Causes stack overflow with very deep trees
+  def maximumNaive[A: Numeric](t: Tree[A]): A = {
+    val maxOp: (A, A) => A = implicitly[Numeric[A]].max _
+    t match {
+      case Leaf(x) => x
+      case Branch(l, r) => maxOp(maximum(l), maximum(r))
+    }
+  }
+
   // Tail recursive version
   def maximum[A: Numeric](t: Tree[A]): A = {
-    val maxOp = implicitly[Numeric[A]].max _  
+    val maxOp: (A, A) => A = implicitly[Numeric[A]].max _
 
     // This should be the smallest possible value for
     // Numeric type A
@@ -46,22 +56,12 @@ object Ex26 {
     @annotation.tailrec
     def loop(t1: List[Tree[A]], m: A): A = {
       t1 match {
-	case Nil => m
-	case Leaf(x) :: lt => loop(lt, maxOp(m,x))
-	case Branch(l,r) :: lt =>  loop(l :: r :: lt, m)
+        case Nil => m
+        case Leaf(x) :: lt => loop(lt, maxOp(m, x))
+        case Branch(l, r) :: lt => loop(l :: r :: lt, m)
       }
     }
 
     loop(List(t), zero)
-  }
-
-  // Naive version
-  // Causes stack overflow with very deep trees
-  def maximumNaive[A: Numeric](t: Tree[A]): A = {
-    val maxOp = implicitly[Numeric[A]].max _
-    t match {
-      case Leaf(x) => x
-      case Branch(l, r) => maxOp(maximum(l), maximum(r))
-    }
   }
 }

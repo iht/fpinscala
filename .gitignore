@@ -19,3 +19,6 @@ project/plugins/project/
 # Emacs Ensime specific
 .ensime
 .ensime_cache
+
+# IntelliJ
+.idea

@@ -62,7 +62,7 @@ object Ex29 {
   }
 
   def maximum[A: Numeric](t: Tree[A]): A = {
-    val max = implicitly[Numeric[A]].max _
+    val max: (A,A) => A = implicitly[Numeric[A]].max _
     val minVal = implicitly[Numeric[A]].fromInt(Int.MinValue)
 
     fold(t, minVal)((m,y) => max(m,y))            
