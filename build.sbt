@@ -32,7 +32,7 @@ homepage := Some(url("https://github.com/iht/fpinscala/"))
 
 startYear := Some(2014)
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.0"
 
 libraryDependencies += "org.specs2" %% "specs2-core" % "4.7.1" % "test"
 
